@@ -1,0 +1,18 @@
+{% block content %}
+    <h1 class="title">{{ 'prodi.list'|trans({}, 'AisProdiBundle') }}</h1>
+
+    <ul id="prodi-list">
+        {% for prodi in prodis %}
+            <li>
+                <a href="{{ path('api_1_get_prodi', {'id': prodi.id}) }}">{{ prodi.nama }}</a>
+                {#[<a href="{{ path('api_1_edit_prodis', {'id': prodi.id}) }}">{{ 'prodi.edit.link'|trans({}, 'AisProdiBundle') }}</a>]#}
+                {#[<a href="{{ path('api_1_remove_prodis', {'id': prodi.id}) }}">{{ 'prodi.remove.link'|trans({}, 'AisProdiBundle') }}</a>]#}
+            </li>
+        {% else %}
+            <li>{{ 'prodi.list.empty'|trans({}, 'AisProdiBundle') }}</li>
+        {% endfor %}
+    </ul>
+    <p>
+        <a href="{{ path('api_1_new_prodi') }}">{{ 'prodi.new.link'|trans({}, 'AisProdiBundle') }}</a>
+    </p>
+{% endblock %}

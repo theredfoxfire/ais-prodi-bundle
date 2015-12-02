@@ -1,0 +1,5 @@
+ais_prodi_prodi:
+    type: rest
+    prefix: /v1
+    resource: Ais\ProdiBundle\Controller\ProdiController
+    name_prefix:  api_1_ # naming collision

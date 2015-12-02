@@ -1,0 +1,19 @@
+Ais\ProdiBundle\Entity\Prodi:
+ type: entity
+ table: prodi
+ id:
+  id: 
+   type: integer
+   generator: { strategy: AUTO }
+ fields:
+  nama:
+   type: string
+   length: 100
+  fakultas_id:
+   type: integer
+  is_active:
+   type: boolean
+   nullable: true
+  is_delete:
+   type: boolean
+   nullable: true
