@@ -1,6 +1,7 @@
 Ais\ProdiBundle\Entity\Prodi:
  type: entity
  table: prodi
+ repositoryClass: Ais\ProdiBundle\Repository\ProdiRepository
  id:
   id: 
    type: integer
