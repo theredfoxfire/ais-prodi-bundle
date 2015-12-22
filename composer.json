@@ -1,5 +1,5 @@
 {
-    "name" : "Ais/ProdiBundle",
+    "name" : "ais/prodibundle",
     "description" : "A bundle filled with Prodi",
     "type" : "symfony-bundle",
     "authors" : [{
